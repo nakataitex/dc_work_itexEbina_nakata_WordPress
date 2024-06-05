@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 <div class="">
-<?php if(function_exists('bcn_display'))
-{
-bcn_display();
-}?>
+    <?php if (function_exists('bcn_display')) {
+        bcn_display();
+    } ?>
 </div>
 <div id="cont_first" class="container">
     <div id="contents">
         <div id="cont_left">
-            <div class="information">
+            <div class="information"><!-- 未編集 -->
                 <h2>Blog</h2>
                 <dl>
                     <dt>2020-08-04</dt>
@@ -40,13 +39,22 @@ bcn_display();
                             the_post(); ?>
                             <dt><?php the_time('Y-m-d'); ?></dt>
                             <dd>
-                            <span class="tab tag_<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>"> 
-                            <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?> </span>
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を掲載しました。</dd>
+                                <span class="tab tag_<?php $cat = get_the_category();
+                                $cat = $cat[0]; {
+                                    echo $cat->slug;
+                                } ?>">
+                                    <?php $cat = get_the_category();
+                                    $cat = $cat[0]; {
+                                        echo $cat->cat_name;
+                                    } ?> </span>
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を掲載しました。
+                            </dd>
                             </dd><?php endwhile; endif; ?>
-                            <?php wp_pagenavi(); ?>
+                    <?php wp_pagenavi(); ?>
                 </dl>
             </div>
         </div>
         <?php get_sidebar(); ?>
-        <?php get_footer(); ?>
+    </div>
+</div>
+<?php get_footer(); ?>
