@@ -46,7 +46,7 @@
             <div class="information">
                 <h2>BLOG</h2>
                 <dl>
-                    <?php $infoPosts = get_posts('numberpost=3&category=3'); foreach($infoPosts as $post):?>
+                    <?php $blogPosts = get_posts('numberposts=3&category=3'); foreach($blogPosts as $post):?>
                     <dt><?php the_time('Y-m-d');?></dt>
                     <dd>
                         <div class="b_img">

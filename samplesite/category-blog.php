@@ -22,6 +22,7 @@ bcn_display();
                                 </div>
                             </dd>
                         <?php endwhile; endif; ?>
+                        <?php wp_pagenavi(); ?>
                 </dl>
             </div>
         </div>

@@ -7,30 +7,6 @@
 <div id="cont_first" class="container">
     <div id="contents">
         <div id="cont_left">
-            <div class="information"><!-- 未編集 -->
-                <h2>Blog</h2>
-                <dl>
-                    <dt>2020-08-04</dt>
-                    <dd>
-                        <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
-                        </div>
-                        <div class="b_right"><a href="<?php echo home_url(); ?>/sample.html">社長通信</a></div>
-                    </dd>
-                    <dt>2020-08-02</dt>
-                    <dd>
-                        <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
-                        </div>
-                        <div class="b_right"><a href="<?php echo home_url(); ?>/sample.html">社員紹介</a></div>
-                    </dd>
-                    <dt>2020-08-01</dt>
-                    <dd>
-                        <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
-                        </div>
-                        <div class="b_right"><a href="<?php echo home_url(); ?>/sample.html">セミナー開催報告</a></div>
-                    </dd>
-                    <?php wp_pagenavi(); ?>
-                </dl>
-            </div>
             <div class="information">
                 <h2>INFORMATION</h2>
                 <dl>
