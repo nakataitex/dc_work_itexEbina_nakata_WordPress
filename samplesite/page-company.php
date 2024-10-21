@@ -2,12 +2,12 @@
 /* Template Name: 会社概要 */
 ?>
 <?php get_header(); ?>
-<div class="">
-    <?php if (function_exists('bcn_display')) {
-        bcn_display();
-    } ?>
-</div>
 <div id="cont_first" class="container">
+    <div class="">
+        <?php if (function_exists('bcn_display')) {
+            bcn_display();
+        } ?>
+    </div>
     <div id="contents">
         <div id="cont_left">
             <h2>会社概要</h2>
@@ -19,7 +19,7 @@
                 <tr>
                     <th>本社</th>
                     <td><?php the_field('add_headquarters_postal_code'); ?><br>
-                    <?php the_field('add_headquarters_address'); ?>
+                        <?php the_field('add_headquarters_address'); ?>
                     </td>
                 </tr>
                 <tr>
@@ -32,7 +32,7 @@
                 </tr>
                 <tr>
                     <th>従業員数</th>
-                    <td><?php the_field('add_member');?></td>
+                    <td><?php the_field('add_member'); ?></td>
                 </tr>
                 <tr>
                     <th>電話番号</th>

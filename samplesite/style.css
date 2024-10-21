@@ -489,6 +489,10 @@ footer li a:hover {
     text-align:center;
 }
 
+.grecaptcha-badge {
+    bottom: 70px !important;
+}
+
 #pageTop {
     position:fixed;
     right:0;

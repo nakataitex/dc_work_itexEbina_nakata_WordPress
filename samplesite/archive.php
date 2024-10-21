@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-<div class="">
-    <?php if (function_exists('bcn_display')) {
-        bcn_display();
-    } ?>
-</div>
 <div id="cont_first" class="container">
+    <div class="">
+        <?php if (function_exists('bcn_display')) {
+            bcn_display();
+        } ?>
+    </div>
     <div id="contents">
         <div id="cont_left">
             <div class="information">
